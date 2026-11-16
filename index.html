@@ -33,6 +33,7 @@
     <script src="assets/js/v3-motion.js?v=3" defer></script>
     <script src="assets/js/v5-playback.js?v=5.2" defer></script>
     <script src="assets/js/v4-gallery.js?v=4.1" defer></script>
+    <script src="assets/js/floral-effects.js" defer></script>
   <style>/* former Arabic text slots now hold English */.bismillah,.dua,.rs-dua,.rs-arabic,[lang="ar"],[dir="rtl"]{direction:ltr!important;unicode-bidi:normal!important}</style>
   <meta name="invitation-design" content="Sunehri" />
 </head>
@@ -76,7 +77,7 @@
 
         <div class="hero-content">
           <div class="hero-shree-ganesh" aria-label="Shree Ganeshaya Namah">॥ श्री गणेशाय नमः ॥</div>
-          <p class="hero-blessing">With the blessings of Shrinathji and our elders,</p>
+          <p class="hero-blessing">With the blessings of Shrinathji,</p>
 
           <div class="hero-divider"><span>✦</span></div>
           <p class="hero-welcome" data-bind="copy.welcomeLine"></p>
@@ -102,7 +103,6 @@
           </div>
 
           <p class="hero-invitation" data-bind="copy.invitation"></p>
-          <p class="hero-closing" data-bind="copy.heroClosing"></p>
 
           <a class="scroll-cue" href="index.html#welcome">
             <span>Scroll</span>
@@ -154,7 +154,7 @@
                 <div class="date-day">
                   <span data-bind="wedding.day"></span>
                   <a aria-hidden="true">⬩</a>
-                  <span data-bind="wedding.time"></span>
+                  <span>7:00 PM onwards</span>
                 </div>
               </div>
             </div>
@@ -173,44 +173,9 @@
         <img src="assets/images/floral-divider-v2.webp" alt="" />
       </div>
 
-      
-      <section class="amber-editorial-section section-pad" aria-label="The atmosphere">
-        <div class="section-shell">
-          <header class="section-heading">
-            <span class="eyebrow">The atmosphere</span>
-            <h2>An evening in bloom</h2>
-            <span class="ornament" aria-hidden="true"><i></i></span>
-          </header>
-          <div class="amber-editorial-track" id="amberEditorialTrack" tabindex="0" role="region" aria-label="Wedding details. Swipe or use the arrow keys to explore.">
-            <figure class="amber-editorial-slide">
-              <img src="media/gallery/01-v2.webp" alt="Ivory roses and mogra frame a candlelit sandstone courtyard wedding stage" loading="lazy" />
-              <figcaption><span>01 / The setting</span>Where the evening begins</figcaption>
-            </figure>
-            <figure class="amber-editorial-slide">
-              <img src="media/gallery/02-v2.webp" alt="Fine mehndi, heirloom kundan and peach silk embroidery in warm candlelight" loading="lazy" />
-              <figcaption><span>02 / The details</span>Every little detail, held dear</figcaption>
-            </figure>
-            <figure class="amber-editorial-slide">
-              <img src="media/gallery/03-v2.webp" alt="An elegant courtyard dinner with ivory flowers, brass thalis and peach linens" loading="lazy" />
-              <figcaption><span>03 / Together</span>A table filled with love</figcaption>
-            </figure>
-          </div>
-          <div class="amber-editorial-dots" aria-label="Choose a wedding detail">
-            <button type="button" data-editorial-slide="0" aria-label="View the setting" aria-pressed="true"></button>
-            <button type="button" data-editorial-slide="1" aria-label="View the details" aria-pressed="false"></button>
-            <button type="button" data-editorial-slide="2" aria-label="View the dinner" aria-pressed="false"></button>
-          </div>
-        </div>
-      </section>
-
-      <div class="floral-divider" aria-hidden="true">
-        <img src="assets/images/floral-divider-v2.webp" alt="" />
-      </div>
-
       <section class="countdown-section section-pad">
         <div class="section-shell countdown-shell">
           <header class="section-heading reveal">
-            <span class="eyebrow">Until we say I do</span>
             <h2>Counting every heartbeat</h2>
             <span class="ornament" aria-hidden="true"><i></i></span>
           </header>
@@ -234,7 +199,7 @@
         <div class="section-shell program-shell">
           <header class="section-heading reveal">
             <span class="eyebrow">The celebration</span>
-            <h2>Our Wedding Day</h2>
+            <h2>The Wedding Day</h2>
             <span class="ornament" aria-hidden="true"><i></i></span>
           </header>
 
@@ -277,28 +242,11 @@
       </div>
 
       
-      <section class="dress-section section-pad">
-        <div class="section-shell dress-shell">
-          <div class="dress-copy reveal">
-            <span class="eyebrow">Dress code</span>
-            <h2 data-bind="dressCode.title"></h2>
-            <p data-bind="dressCode.description"></p>
-          </div>
-
-          <div id="dressPalette" class="palette reveal" aria-label="Suggested colour palette"></div>
-        </div>
-      </section>
-
-      <div class="floral-divider" aria-hidden="true">
-        <img src="assets/images/floral-divider-v2.webp" alt="" />
-      </div>
-
-      
       <section class="events-section section-pad">
         <div class="section-shell">
           <header class="section-heading reveal">
             <span class="eyebrow">The Festivities</span>
-            <h2>Days filled with joy</h2>
+            <h2>A Day filled with joy</h2>
             <span class="ornament" aria-hidden="true"><i></i></span>
           </header>
 
@@ -396,7 +344,6 @@
           <span class="ornament light" aria-hidden="true"><i></i></span>
 
           <p class="bismillah closing-quote" data-bind="copy.dua"></p>
-          <p class="dua-translation" data-bind="copy.duaTranslation"></p>
 
           <h2 data-bind="copy.closing"></h2>
           <div id="closingNames" class="closing-names"></div>
@@ -404,7 +351,7 @@
 
           <div class="closing-family-signature">
             <p>With love,</p>
-            <strong>The Sharma Family</strong>
+            <strong>Amarchand ji Brijmohan ji Sharma and Family</strong>
           </div>
         </div>
       </footer>

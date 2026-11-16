@@ -1,7 +1,7 @@
 window.INVITATION_CONFIG = {
   "site": {
     "title": "Shradha & Suhas — Wedding Invitation",
-    "description": "The Sharma Family joyfully invites you to celebrate the wedding of Shradha and Suhas on December 5, 2026 at Jenvi Conventions, Hyderabad."
+    "description": "Amarchand ji Brijmohan ji Sharma and Family joyfully invites you to celebrate the wedding of Shradha and Suhas on December 5, 2026 at Jenvi Conventions, Hyderabad."
   },
   "couple": {
     "brideInitial": "S",
@@ -19,24 +19,24 @@ window.INVITATION_CONFIG = {
   },
   "copy": {
     "bismillah": "॥ श्री गणेशाय नमः ॥",
-    "bismillahTranslation": "With the blessings of Shrinathji and our elders",
-    "welcomeLine": "The Sharma Family\njoyfully invites you to celebrate the wedding of",
+    "bismillahTranslation": "With the blessings of Shrinathji,",
+    "welcomeLine": "Amarchand ji Brijmohan ji Sharma and Family\njoyfully invites you to celebrate the wedding of",
     "invitation": "",
-    "heroClosing": "May the life they build together be rooted in kindness,\nstrengthened by trust and enriched by love.",
+    "heroClosing": "",
     "welcomeTitle": "A Beautiful Beginning",
-    "welcomeBody": "With hearts full of gratitude and the blessings of our elders, we warmly invite you to join us as we celebrate the wedding of Shradha & Suhas. Your presence, love, and blessings will make our celebration complete.",
+    "welcomeBody": "With hearts full of gratitude, we warmly invite you to join us as we celebrate the wedding of Shradha & Suhas. Your presence, love, and blessings will make our celebration complete.",
     "gifts": "Your love, prayers, and blessings are the greatest gifts we could ever ask for. Your presence is our treasure.",
     "closing": "We look forward to celebrating this special day with you and receiving your blessings for the couple.",
     "dua": "॥ श्री गणेशाय नमः ॥",
-    "duaTranslation": "May the life they build together be rooted in kindness, strengthened by trust and enriched by love."
+    "duaTranslation": ""
   },
   "wedding": {
-    "isoDate": "2026-12-05T16:00:00+05:30",
+    "isoDate": "2026-12-05T19:00:00+05:30",
     "date": "December 5, 2026",
     "day": "Saturday",
-    "time": "04:00 PM",
+    "time": "7:00 PM",
     "timezone": "IST",
-    "calendarEvent": "Wedding Ceremony"
+    "calendarEvent": "Wedding Celebration"
   },
   "media": {
     "introVideo": "./assets/video/opening-v3.mp4",
@@ -72,7 +72,7 @@ window.INVITATION_CONFIG = {
       "note": "Auspicious Wedding Ceremony"
     },
     {
-      "time": "07:01 PM – 11:00 PM",
+      "time": "07:01 PM onwards",
       "title": "Reception",
       "note": "Dinner, blessings & celebration"
     }
@@ -98,7 +98,6 @@ window.INVITATION_CONFIG = {
       "name": "Baraat Swagat",
       "icon": "barat",
       "start": "2026-12-05T16:00:00+05:30",
-      "end": "2026-12-05T16:30:00+05:30",
       "date": "December 5",
       "time": "4:00 PM",
       "location": "Jenvi Conventions, Hyderabad",
@@ -117,7 +116,6 @@ window.INVITATION_CONFIG = {
       "name": "Pheras",
       "icon": "rings",
       "start": "2026-12-05T16:30:00+05:30",
-      "end": "2026-12-05T19:00:00+05:30",
       "date": "December 5",
       "time": "4:30 PM",
       "location": "Jenvi Conventions, Hyderabad",
@@ -136,9 +134,8 @@ window.INVITATION_CONFIG = {
       "name": "Reception",
       "icon": "valima",
       "start": "2026-12-05T19:01:00+05:30",
-      "end": "2026-12-05T23:00:00+05:30",
       "date": "December 5",
-      "time": "7:01 PM — 11:00 PM",
+      "time": "7:01 PM onwards",
       "location": "Jenvi Conventions, Hyderabad",
       "mapLink": "https://share.google/8GyfriJ6yLDmJaBfq",
       "theme": {
@@ -155,7 +152,7 @@ window.INVITATION_CONFIG = {
   "rsvp": {
     "endpoint": "",
     "deadline": "Kindly respond by November 20, 2026",
-    "contact": "For assistance, please contact the Sharma family.",
+    "contact": "For assistance, please contact the family.",
     "fields": {
       "name": "Your full name",
       "email": "Email address",
