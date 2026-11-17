@@ -62,12 +62,12 @@ window.INVITATION_CONFIG = {
   },
   "program": [
     {
-      "time": "04:00 PM",
+      "time": "03:00 PM",
       "title": "Baraat Swagat",
       "note": "Welcoming the Groom & Baraat"
     },
     {
-      "time": "04:30 PM",
+      "time": "03:30 PM",
       "title": "Pheras",
       "note": "Auspicious Wedding Ceremony"
     },
@@ -97,9 +97,9 @@ window.INVITATION_CONFIG = {
     {
       "name": "Baraat Swagat",
       "icon": "barat",
-      "start": "2026-12-05T16:00:00+05:30",
+      "start": "2026-12-05T15:00:00+05:30",
       "date": "December 5",
-      "time": "4:00 PM",
+      "time": "3:00 PM",
       "location": "Jenvi Conventions, Hyderabad",
       "mapLink": "https://share.google/8GyfriJ6yLDmJaBfq",
       "theme": {
@@ -115,9 +115,9 @@ window.INVITATION_CONFIG = {
     {
       "name": "Pheras",
       "icon": "rings",
-      "start": "2026-12-05T16:30:00+05:30",
+      "start": "2026-12-05T15:30:00+05:30",
       "date": "December 5",
-      "time": "4:30 PM",
+      "time": "3:30 PM",
       "location": "Jenvi Conventions, Hyderabad",
       "mapLink": "https://share.google/8GyfriJ6yLDmJaBfq",
       "theme": {
