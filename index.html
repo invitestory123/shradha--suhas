@@ -279,9 +279,110 @@
         <img src="assets/images/floral-divider-v2.webp" alt="" />
       </div>
 
+      <section class="rsvp-section section-pad">
+        <div class="section-shell rsvp-shell">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Your response</span>
+            <h2>Kindly RSVP</h2>
+            <span class="ornament" aria-hidden="true"><i></i></span>
+          </header>
 
+          <div class="rsvp-whatsapp-card reveal">
+            <p class="rsvp-whatsapp-intro">We look forward to celebrating with you! Please let us know if you can make it.</p>
+            <div class="rsvp-btn-group">
+              <a
+                href="https://wa.me/919885383877?text=Namaste!%20We%20joyfully%20confirm%20our%20presence%20to%20celebrate%20the%20wedding%20of%20Shradha%20and%20Suhas%20on%20December%205,%202026."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whatsapp-rsvp"
+                aria-label="RSVP on WhatsApp"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>RSVP on WhatsApp</span>
+              </a>
+              <a href="tel:+919885383877" class="btn-call-rsvp" aria-label="Call +91 98853 83877">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>Call: +91 98853 83877</span>
+              </a>
+            </div>
+          </div>
 
-      
+          <div class="rsvp-divider reveal" aria-hidden="true">
+            <span>or send response details</span>
+          </div>
+
+          <form id="rsvpForm" class="rsvp-form reveal" novalidate>
+            <label>
+              <span>Name</span>
+              <input id="rsvpName" type="text" required autocomplete="name" />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input id="rsvpEmail" type="email" autocomplete="email" />
+            </label>
+
+            <label>
+              <span>Attendance</span>
+              <select id="rsvpAttendance" required></select>
+            </label>
+
+            <label>
+              <span>Number of guests</span>
+              <select id="rsvpGuests"></select>
+            </label>
+
+            <label class="form-wide">
+              <span>Message</span>
+              <textarea id="rsvpNote" rows="3"></textarea>
+            </label>
+
+            <div class="form-footer form-wide">
+              <div>
+                <p data-bind="rsvp.deadline"></p>
+                <small data-bind="rsvp.contact"></small>
+              </div>
+              <button type="submit" class="primary-button btn-whatsapp-submit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>Send RSVP via WhatsApp</span>
+              </button>
+            </div>
+          </form>
+
+          <div id="rsvpSuccess" class="rsvp-success reveal" hidden>
+            <span class="eyebrow">Thank you!</span>
+            <h3>Your response has been received</h3>
+            <p>We look forward to celebrating with you.</p>
+            <div class="rsvp-success-wa">
+              <a
+                id="rsvpSuccessWaLink"
+                href="https://wa.me/919885383877?text=Namaste!%20We%20joyfully%20confirm%20our%20presence%20to%20celebrate%20the%20wedding%20of%20Shradha%20and%20Suhas%20on%20December%205,%202026."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whatsapp-rsvp"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z"/>
+                </svg>
+                <span>Open WhatsApp Chat</span>
+              </a>
+            </div>
+            <button id="editRsvp" class="text-button" type="button">
+              Edit your response
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="floral-divider" aria-hidden="true">
+        <img src="assets/images/floral-divider-v2.webp" alt="" />
+      </div>
       <footer class="closing-section">
         <div class="closing-arch reveal">
           <span class="ornament light" aria-hidden="true"><i></i></span>
@@ -310,5 +411,48 @@ new MutationObserver(fill).observe(document.documentElement,{childList:true,subt
     <span class="collection-signature__name">Sunehri</span>
     <span class="collection-signature__line">Candlelit celebrations</span>
   </footer>
+  <script>
+  (function() {
+    function initWhatsAppRsvp() {
+      var form = document.getElementById('rsvpForm');
+      if (!form) return;
+
+      form.addEventListener('submit', function(e) {
+        var nameEl = document.getElementById('rsvpName');
+        var name = (nameEl ? nameEl.value : '').trim();
+        if (!name) return;
+
+        var attendEl = document.getElementById('rsvpAttendance');
+        var attend = attendEl && attendEl.value ? attendEl.value : 'Joyfully accepts';
+        var guestsEl = document.getElementById('rsvpGuests');
+        var guests = guestsEl && guestsEl.value ? guestsEl.value : '1 guest';
+        var noteEl = document.getElementById('rsvpNote');
+        var note = (noteEl ? noteEl.value : '').trim();
+
+        var msg = 'Namaste! Wedding RSVP \u2014 Shradha & Suhas (5 Dec 2026)\n\n' +
+          '\u2022 Name: ' + name + '\n' +
+          '\u2022 Attendance: ' + attend + '\n' +
+          '\u2022 Number of guests: ' + guests;
+        if (note) {
+          msg += '\n\u2022 Message: ' + note;
+        }
+
+        var waUrl = 'https://wa.me/919885383877?text=' + encodeURIComponent(msg);
+        var successLink = document.getElementById('rsvpSuccessWaLink');
+        if (successLink) {
+          successLink.href = waUrl;
+        }
+
+        window.open(waUrl, '_blank');
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initWhatsAppRsvp);
+    } else {
+      initWhatsAppRsvp();
+    }
+  })();
+  </script>
 </body>
 </html>

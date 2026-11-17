@@ -152,7 +152,9 @@ window.INVITATION_CONFIG = {
   "rsvp": {
     "endpoint": "",
     "deadline": "Kindly respond by November 20, 2026",
-    "contact": "For assistance, please contact the family.",
+    "contact": "For assistance or RSVP, please contact +91 98853 83877",
+    "phone": "+919885383877",
+    "whatsapp": "919885383877",
     "fields": {
       "name": "Your full name",
       "email": "Email address",

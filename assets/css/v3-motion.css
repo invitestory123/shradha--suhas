@@ -251,7 +251,6 @@ button:focus-visible, a:focus-visible, [role='button']:focus-visible {
   }
 }
 
-.rsvp-section, [data-section="rsvp"] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .gallery-slide img, .gallery-slide.is-active img, .v3-pressed { transform: none !important; }
