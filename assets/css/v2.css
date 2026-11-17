@@ -49,14 +49,18 @@
   opacity: .92;
   text-shadow: 0 1px 8px rgba(60, 35, 25, 0.5);
 }
+.couple-names .elder-rel,
 .elder-rel {
   font-size: .56rem;
   font-weight: 600;
   letter-spacing: .2em;
-  margin: 6px 0 2px;
+  margin: 6px 0 2px !important;
   opacity: .8;
   text-transform: uppercase;
   color: #F3E2B3;
+}
+.couple-names div:last-child .elder-rel {
+  margin-top: 10px !important;
 }
 .elder-names {
   display: block;

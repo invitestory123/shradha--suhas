@@ -130,6 +130,128 @@ button:focus-visible, a:focus-visible, [role='button']:focus-visible {
   }
   .gallery-frame:hover .gallery-slide.is-active img { transform: scale(1.08); }
 }
+
+/* ==========================================================================
+   Amber Timeline Floral Scroll Flow & Ease Animation
+   ========================================================================== */
+.timeline {
+  position: relative;
+}
+
+/* Active glowing golden progress line flowing behind the floral */
+.timeline-floral-progress {
+  position: absolute;
+  top: 24px;
+  left: 104px;
+  width: 2px;
+  background: linear-gradient(to bottom, #d4a853, #faedd3 50%, #b88a45);
+  box-shadow: 0 0 10px rgba(212, 168, 83, 0.8), 0 0 3px rgba(255, 248, 235, 0.9);
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.timeline-floral-progress.is-active {
+  opacity: 1;
+}
+
+/* Floating Floral Follower that flows down the timeline line */
+.timeline-floral-cursor {
+  position: absolute;
+  top: 24px;
+  left: 104px;
+  width: 54px;
+  height: 54px;
+  margin-left: -27px;
+  margin-top: -27px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform, top, opacity;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-floral-cursor.is-active {
+  opacity: 1;
+}
+
+/* Soft golden aura radiating around the blooming flower */
+.timeline-floral-aura {
+  position: absolute;
+  inset: -12px;
+  background: radial-gradient(circle, rgba(255, 246, 227, 0.9) 0%, rgba(212, 168, 83, 0.38) 45%, rgba(184, 138, 69, 0) 72%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: amber-floral-pulse 2.6s ease-in-out infinite alternate;
+}
+
+@keyframes amber-floral-pulse {
+  0% { transform: scale(0.88); opacity: 0.65; }
+  100% { transform: scale(1.15); opacity: 0.95; }
+}
+
+/* Floral transform wrapper for silky smooth scale and rotation easing */
+.timeline-floral-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.timeline-floral-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 3px 6px rgba(78, 52, 22, 0.32)) drop-shadow(0 0 10px rgba(245, 218, 160, 0.55));
+}
+
+/* Smooth milestone dot bloom states */
+.timeline article::before {
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.35s ease,
+              background-color 0.35s ease,
+              border-color 0.35s ease !important;
+}
+
+/* When flower is directly passing/blooming over a milestone dot */
+.timeline article.is-bloomed::before {
+  transform: translateX(-50%) scale(1.5) !important;
+  background: #ffffff !important;
+  border-color: #b88a45 !important;
+  box-shadow: 0 0 0 6px rgba(184, 138, 69, 0.28), 0 0 18px rgba(212, 168, 83, 0.85) !important;
+}
+
+/* Passed milestone dot stays warmly lit */
+.timeline article.is-passed::before {
+  background: #b88a45 !important;
+  border-color: #f7e9da !important;
+  box-shadow: 0 0 0 4px rgba(184, 138, 69, 0.16) !important;
+}
+
+@media (max-width: 600px) {
+  .timeline-floral-progress,
+  .timeline-floral-cursor {
+    left: 86px;
+  }
+  .timeline-floral-cursor {
+    width: 48px;
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -24px;
+  }
+}
+
+.rsvp-section, [data-section="rsvp"] { display: none !important; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .gallery-slide img, .gallery-slide.is-active img, .v3-pressed { transform: none !important; }
